@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
-KEYWORDS = {'дизайн', 'фото', 'web', 'Python*'}
+KEYWORDS = {'дизайн', 'фото', 'web', 'Python*', 'DevOps*'}
 URL = 'https://habr.com/ru/all/'
 
 
@@ -25,4 +25,5 @@ def parser(keyword, url):
             return
 
 
-parser(KEYWORDS, URL)
+if __name__ == '__main__':
+    parser(KEYWORDS, URL)
